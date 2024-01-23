@@ -31,15 +31,15 @@ Each event has its own endpoint. All Media Edge API endpoints are POST methods, 
 
 This guide shows how to track the following events after starting the session:
 
-* [Buffer Start](#buffer-start-event-request)
-* [Play](#play-event-request)
-* [Session Complete](#session-complete-event-request)
+* [Buffer Start](#buffer-start)
+* [Play](#play-event)
+* [Session Complete](#session-complete)
 
 ## Implementing the API {#implement-api}
 
 Apart from minor differences in the model and paths called, the Media Edge API has the same implementation as the [Media Collection API](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-overview.html). The implementation details of Media Collection remain valid for Media Edge API, as described in the following documentation:
 
-* [Setting the HTTP request type in your player](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-impl/mc-api-sed-pings.html)
+* [Setting the HTTP request type in your player](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-impl/mc-api-set-http-req.html)
 * [Sending ping events](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-impl/mc-api-sed-pings.html)
 * [Timeout conditions](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-impl/mc-api-timeout.html)
 * [Controlling the order of events](https://experienceleague.adobe.com/docs/media-analytics/using/implementation/streaming-media-apis/mc-api-impl/mc-api-ctrl-order.html)
@@ -237,7 +237,7 @@ The successful respone indicates a status of 200 and does not include any conten
 
 For more information on Play endpoint parameters and examples, see the [Media Edge Swagger](swagger.md) file.
 
-## Session Complete event request {#session-complete}
+## Session Complete event request {#}
 
 The Session Complete event is sent when the end of the main content is reached. To make a Session Complete event request, use your `sessionId` in the payload of a call to the following endpoint:
 
